@@ -1,0 +1,40 @@
+C:\Users\CesarCuellar\Documents\Visual Studio 2013\Projects\Adsi1197173\AplicacionBanco\BancoSena\bin\BancoSena.dll.config
+C:\Users\CesarCuellar\Documents\Visual Studio 2013\Projects\Adsi1197173\AplicacionBanco\BancoSena\bin\BancoSena.dll
+C:\Users\CesarCuellar\Documents\Visual Studio 2013\Projects\Adsi1197173\AplicacionBanco\BancoSena\bin\BancoSena.pdb
+C:\Users\CesarCuellar\Documents\Visual Studio 2013\Projects\Adsi1197173\AplicacionBanco\BancoSena\obj\Debug\BancoSena.dll
+C:\Users\CesarCuellar\Documents\Visual Studio 2013\Projects\Adsi1197173\AplicacionBanco\BancoSena\obj\Debug\BancoSena.pdb
+C:\Users\CesarCuellar\Documents\Visual Studio 2013\Projects\Adsi1197173\AplicacionBanco\BancoSena\bin\Microsoft.SqlServer.Types.dll
+C:\Users\CesarCuellar\Documents\Visual Studio 2013\Projects\Adsi1197173\AplicacionBanco\BancoSena\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\CesarCuellar\Documents\Visual Studio 2013\Projects\Adsi1197173\AplicacionBanco\BancoSena\obj\Debug\BancoSena.csprojAssemblyReference.cache
+C:\Users\CesarCuellar\Documents\Visual Studio 2013\Projects\Adsi1197173\AplicacionBanco\BancoSena\obj\Debug\BancoSena.csproj.CoreCompileInputs.cache
+C:\Users\CesarCuellar\Documents\Visual Studio 2013\Projects\Adsi1197173\AplicacionBanco\BancoSena\obj\Debug\BancoSena.csproj.CopyComplete
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\BancoSena.dll.config
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\BancoSena.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\BancoSena.pdb
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\Microsoft.ReportViewer.WebDesign.DLL
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\Microsoft.SqlServer.Types.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\EnvDTE.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\EnvDTE80.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\stdole.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\obj\Debug\BancoSena.csproj.AssemblyReference.cache
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\obj\Debug\BancoSena.csproj.CoreCompileInputs.cache
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\obj\Debug\BancoSena.csproj.CopyComplete
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\obj\Debug\BancoSena.dll
+C:\Users\thars\OneDrive\Desktop\banco\AplicacionBanco\BancoSena\obj\Debug\BancoSena.pdb

@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D9BC497-55C1-42F0-AB18-8D4B33AD75A1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BancoSena</RootNamespace>
+    <AssemblyName>BancoSena</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.WebDesign.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Web.2012.1.0.0\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.aspx" />
+    <Content Include="FrmAgrearAlgo.aspx" />
+    <Content Include="FrmContenido.aspx" />
+    <Content Include="FrmIniciarSesion.aspx" />
+    <Content Include="Index.Master" />
+    <Content Include="BancoSenaDataSet.xsc">
+      <DependentUpon>BancoSenaDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="BancoSenaCaucaDataSet.xsc">
+      <DependentUpon>BancoSenaCaucaDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="BancoSenaCaucaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoSenaCaucaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="BancoSenaCaucaDataSet.xss">
+      <DependentUpon>BancoSenaCaucaDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="BancoSenaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoSenaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="BancoSenaDataSet.xss">
+      <DependentUpon>BancoSenaDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="BancoSenaDataSetEjemplo.xsc">
+      <DependentUpon>BancoSenaDataSetEjemplo.xsd</DependentUpon>
+    </Content>
+    <None Include="BancoSenaDataSetEjemplo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoSenaDataSetEjemplo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="BancoSenaDataSetEjemplo.xss">
+      <DependentUpon>BancoSenaDataSetEjemplo.xsd</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="encabezado.aspx" />
+    <Content Include="Js\Ajax.js" />
+    <Content Include="Js\Ajax1.js" />
+    <Content Include="Js\index.js" />
+    <Content Include="menu.aspx" />
+    <Content Include="piePagina.aspx" />
+    <Content Include="salir.aspx" />
+    <Content Include="SolicitudesAjax.aspx" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vista\Administrador\default.aspx" />
+    <Content Include="Vista\Administrador\encabeza.aspx" />
+    <Content Include="Vista\Administrador\encabezado.aspx" />
+    <Content Include="Vista\Administrador\frmAgregar.aspx" />
+    <Content Include="Vista\Administrador\FrmAgregarEmpleado.aspx" />
+    <Content Include="Vista\Administrador\FrmEjemploReportes.aspx" />
+    <Content Include="Vista\Administrador\FrmReportes.aspx" />
+    <Content Include="Vista\Administrador\FrmReportesAdministrador.aspx" />
+    <Content Include="Vista\Administrador\FrmReportesCuentas.aspx" />
+    <Content Include="Vista\Administrador\menu.aspx" />
+    <Content Include="Vista\Administrador\piePagina.aspx" />
+    <Content Include="Vista\Cajero\default.aspx" />
+    <Content Include="Vista\Cajero\encabezado.aspx" />
+    <Content Include="Vista\Cajero\FrmAgregarCliente.aspx" />
+    <Content Include="Vista\Cajero\FrmAgregarCuenta.aspx" />
+    <Content Include="Vista\Cajero\FrmConsignar.aspx" />
+    <Content Include="Vista\Cajero\FrmRetirar.aspx" />
+    <Content Include="Vista\Cajero\menu.aspx" />
+    <Content Include="Vista\Cajero\piePagina.aspx" />
+    <Content Include="Vista\Clientes\default.aspx" />
+    <Content Include="Vista\Clientes\encabezado.aspx" />
+    <Content Include="Vista\Clientes\FrmTransferir.aspx" />
+    <Content Include="Vista\Clientes\menu.aspx" />
+    <Content Include="Vista\Clientes\piePagina.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BancoSenaCaucaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoSenaCaucaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BancoSenaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoSenaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BancoSenaDataSetEjemplo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoSenaDataSetEjemplo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Controlador\ControllerCliente.cs" />
+    <Compile Include="Controlador\ControllerCuenta.cs" />
+    <Compile Include="Controlador\ControllerEmpleado.cs" />
+    <Compile Include="Controlador\ControllerGestionBanco.cs" />
+    <Compile Include="Controlador\ControllerTransaccion.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="encabezado.aspx.cs">
+      <DependentUpon>encabezado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="encabezado.aspx.designer.cs">
+      <DependentUpon>encabezado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgrearAlgo.aspx.cs">
+      <DependentUpon>FrmAgrearAlgo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmAgrearAlgo.aspx.designer.cs">
+      <DependentUpon>FrmAgrearAlgo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContenido.aspx.cs">
+      <DependentUpon>FrmContenido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmContenido.aspx.designer.cs">
+      <DependentUpon>FrmContenido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIniciarSesion.aspx.cs">
+      <DependentUpon>FrmIniciarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmIniciarSesion.aspx.designer.cs">
+      <DependentUpon>FrmIniciarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.Master.cs">
+      <DependentUpon>Index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.Master.designer.cs">
+      <DependentUpon>Index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Cliente.cs" />
+    <Compile Include="Modelo\Conexion.cs" />
+    <Compile Include="Modelo\Correo.cs" />
+    <Compile Include="Modelo\Cuenta.cs" />
+    <Compile Include="Modelo\DatosCliente.cs" />
+    <Compile Include="Modelo\DatosCuenta.cs" />
+    <Compile Include="Modelo\DatosEmpleado.cs" />
+    <Compile Include="Modelo\DatosGestionBanco.cs" />
+    <Compile Include="Modelo\DatosTransaccion.cs" />
+    <Compile Include="Modelo\DatosUsuario.cs" />
+    <Compile Include="Modelo\Empleado.cs" />
+    <Compile Include="Modelo\Persona.cs" />
+    <Compile Include="Modelo\Rol.cs" />
+    <Compile Include="Modelo\Transaccion.cs" />
+    <Compile Include="Modelo\Usuario.cs" />
+    <Compile Include="piePagina.aspx.cs">
+      <DependentUpon>piePagina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="piePagina.aspx.designer.cs">
+      <DependentUpon>piePagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="salir.aspx.cs">
+      <DependentUpon>salir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="salir.aspx.designer.cs">
+      <DependentUpon>salir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudesAjax.aspx.cs">
+      <DependentUpon>SolicitudesAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SolicitudesAjax.aspx.designer.cs">
+      <DependentUpon>SolicitudesAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Vista\Administrador\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\encabeza.aspx.cs">
+      <DependentUpon>encabeza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\encabeza.aspx.designer.cs">
+      <DependentUpon>encabeza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\encabezado.aspx.cs">
+      <DependentUpon>encabezado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\encabezado.aspx.designer.cs">
+      <DependentUpon>encabezado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\frmAgregar.aspx.cs">
+      <DependentUpon>frmAgregar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\frmAgregar.aspx.designer.cs">
+      <DependentUpon>frmAgregar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\FrmAgregarEmpleado.aspx.cs">
+      <DependentUpon>FrmAgregarEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\FrmAgregarEmpleado.aspx.designer.cs">
+      <DependentUpon>FrmAgregarEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\FrmEjemploReportes.aspx.cs">
+      <DependentUpon>FrmEjemploReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\FrmEjemploReportes.aspx.designer.cs">
+      <DependentUpon>FrmEjemploReportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\FrmReportes.aspx.cs">
+      <DependentUpon>FrmReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\FrmReportes.aspx.designer.cs">
+      <DependentUpon>FrmReportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\FrmReportesAdministrador.aspx.cs">
+      <DependentUpon>FrmReportesAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\FrmReportesAdministrador.aspx.designer.cs">
+      <DependentUpon>FrmReportesAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\FrmReportesCuentas.aspx.cs">
+      <DependentUpon>FrmReportesCuentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\FrmReportesCuentas.aspx.designer.cs">
+      <DependentUpon>FrmReportesCuentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\piePagina.aspx.cs">
+      <DependentUpon>piePagina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\piePagina.aspx.designer.cs">
+      <DependentUpon>piePagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Cajero\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Cajero\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Cajero\encabezado.aspx.cs">
+      <DependentUpon>encabezado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Cajero\encabezado.aspx.designer.cs">
+      <DependentUpon>encabezado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Cajero\FrmAgregarCliente.aspx.cs">
+      <DependentUpon>FrmAgregarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Cajero\FrmAgregarCliente.aspx.designer.cs">
+      <DependentUpon>FrmAgregarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Cajero\FrmAgregarCuenta.aspx.cs">
+      <DependentUpon>FrmAgregarCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Cajero\FrmAgregarCuenta.aspx.designer.cs">
+      <DependentUpon>FrmAgregarCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Cajero\FrmConsignar.aspx.cs">
+      <DependentUpon>FrmConsignar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Cajero\FrmConsignar.aspx.designer.cs">
+      <DependentUpon>FrmConsignar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Cajero\FrmRetirar.aspx.cs">
+      <DependentUpon>FrmRetirar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Cajero\FrmRetirar.aspx.designer.cs">
+      <DependentUpon>FrmRetirar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Cajero\menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Cajero\menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Cajero\piePagina.aspx.cs">
+      <DependentUpon>piePagina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Cajero\piePagina.aspx.designer.cs">
+      <DependentUpon>piePagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\encabezado.aspx.cs">
+      <DependentUpon>encabezado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\encabezado.aspx.designer.cs">
+      <DependentUpon>encabezado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\FrmTransferir.aspx.cs">
+      <DependentUpon>FrmTransferir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\FrmTransferir.aspx.designer.cs">
+      <DependentUpon>FrmTransferir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\piePagina.aspx.cs">
+      <DependentUpon>piePagina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\piePagina.aspx.designer.cs">
+      <DependentUpon>piePagina.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Css\" />
+    <Folder Include="Recursos\Imagenes\" />
+    <Folder Include="Recursos\Librerias\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Vista\Administrador\Report1.rdlc" />
+    <EmbeddedResource Include="Vista\Administrador\Report2.rdlc" />
+    <EmbeddedResource Include="Vista\Administrador\Report3.rdlc" />
+    <EmbeddedResource Include="Vista\Administrador\Report4.rdlc" />
+    <EmbeddedResource Include="Vista\Administrador\Report5.rdlc" />
+    <EmbeddedResource Include="Vista\Administrador\Report6.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6993</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6993/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
